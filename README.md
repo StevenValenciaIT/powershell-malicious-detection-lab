@@ -27,11 +27,18 @@ Alert level 15 triggered
 Message: "Executable file dropped in folder commonly used by malware"
 
 ## Screenshots
-Suspicious PowerShell Command	Sysmon Log	Wazuh Alert
+### Powershell Command
+![powershell](./powershell.png)
+
+### Sysmon Log in Event Viewer
+![sysmonlog](./sysmonlog.png)
+
+### Wazuh Alert Triggered
+![wazuh](./wazuh.png)
 
 ## Key Takeaways
 - Sysmon provides deep visibility into process creation, command-line usage, and network activity.
 
 - Wazuh effectively correlates endpoint activity to detect high-risk behavior like encoded or stealth PowerShell usage.
 
-- Even without actual malware, simulated behavior alone can trigger detection—essential in SOC analysis and threat hunting.
+- Even without actual malware, simulated behavior alone can trigger detection, which is essential in SOC analysis and threat hunting.
